@@ -69,8 +69,8 @@ data "aws_iam_policy_document" "github_actions_assume_role" {
       values = [
         "repo:${var.github_org}@${local.github_org_id}/zen-pharma-frontend@${local.github_repo_id_frontend}:ref:refs/heads/main",
         "repo:${var.github_org}@${local.github_org_id}/zen-pharma-frontend@${local.github_repo_id_frontend}:ref:refs/heads/develop",
-        "repo:${var.github_org}@${local.github_org_id}/zen-pharma-backend@${local.github_repo_id_backend}:ref:refs/heads/main",
-        "repo:${var.github_org}@${local.github_org_id}/zen-pharma-backend@${local.github_repo_id_backend}:ref:refs/heads/develop",
+        "repo:${var.github_org}@${local.github_org_id}/zen-pharma-backend-lab1@${local.github_repo_id_backend}:ref:refs/heads/main",
+        "repo:${var.github_org}@${local.github_org_id}/zen-pharma-backend-lab1@${local.github_repo_id_backend}:ref:refs/heads/develop",
         "repo:${var.github_org}/zen-pharma-frontend:ref:refs/heads/main",
         "repo:${var.github_org}/zen-pharma-frontend:ref:refs/heads/develop",
         "repo:${var.github_org}/zen-pharma-backend:ref:refs/heads/main",

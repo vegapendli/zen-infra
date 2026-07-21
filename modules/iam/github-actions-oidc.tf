@@ -36,6 +36,15 @@ resource "aws_iam_openid_connect_provider" "github_actions" {
   }
 }
 
+
+
+
+locals {
+  github_org_id           = "129896844"  # vegapendli
+  github_repo_id_frontend = "1308059973" # vegapendli/zen-pharma-frontend
+  github_repo_id_backend  = "1303229090" # vegapendli/zen-pharma-backend-lab1
+}
+
 # Trust policy — restricts which repos and branches can assume this role
 data "aws_iam_policy_document" "github_actions_assume_role" {
   statement {
